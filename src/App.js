@@ -4,6 +4,7 @@ import Home from './pages/HomePage/Home'
 import  {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import GlobalStyle from './globalStyles';
 import About from './pages/AboutPage/About';
+import Small from './pages/Small/Small';
 
 
 
@@ -17,11 +18,9 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
-      {/* <Switch>
-        <Route path='/' exact component={Home}/>
-        <Route path='/about' exact component={About}/>
-        
-      </Switch> */}
+      <Small/>
+
+      
     </Router>
   );
 }

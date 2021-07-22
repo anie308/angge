@@ -44,7 +44,7 @@ padding-left:20px;
 `;
 
 export const Image = styled.img`
-    height: 100%;
+    height: 30px;
 
 @media screen and (max-width:960px){
     height:35px;
@@ -123,9 +123,7 @@ border-bottom: 2px solid transparent;
 
 
 
-&:hover {
-    border-bottom:2px solid #747474;
-}
+
 
 
 
@@ -151,6 +149,8 @@ export const NavLink = styled(Link)`
     height: 100%;
     cursor: pointer;
 
+  
+
 
     @media screen and (max-width: 960px){
         color: #232262;
@@ -166,6 +166,7 @@ export const NavLink = styled(Link)`
             transition: all 0.3s ease;
 
         }
+
     }
 `;
 

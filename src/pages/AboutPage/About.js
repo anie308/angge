@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from './Slider/Slider'
+import Mission from './Mission/Mission'
 import { AboutCon,
                     Trusted,
                     TrustedHead,
@@ -19,6 +20,7 @@ function About() {
             <AboutCon>
                 <Slider />
             </AboutCon>
+            <Mission/>
         </>
     )
 }

@@ -1,12 +1,40 @@
 import React from 'react'
-import {InfoSection} from '../../components'
+import {
+    InfoSec,
+    InfoRow,
+    TextWrapper,
+    LeadText,
+    ImageCon,
+    Break,
+    ImageWrapper,
+    Follow
+} from './Home.elements'
+import { Container } from '../../globalStyles'
+import secImg from '../../assets/images/About Section.png'
 
-function Home() {
+function InfoSection() {
     return (
         <>
-         <InfoSection />   
+            <InfoSec>
+                <Container>
+                    <InfoRow>
+                        <TextWrapper>
+                            <LeadText>
+                                We make it <Break /> perfect for you
+                            </LeadText>
+                            <Follow>Simple . Clean . Creative.</Follow>
+                        </TextWrapper>
+                        <ImageWrapper>
+                            <ImageCon src={secImg} alt="" />
+                        </ImageWrapper>
+
+                    </InfoRow>
+
+                </Container>
+            </InfoSec>
         </>
     )
 }
 
-export default Home
+export default InfoSection
+

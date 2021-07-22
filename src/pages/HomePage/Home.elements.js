@@ -11,7 +11,7 @@ background-color: #f1f1f1;
 export const InfoRow = styled.div`
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 
 
 

@@ -5,7 +5,7 @@ export const AboutCon = styled.div`
     
 `
 export const Trusted = styled.div`
-margin: 20px;
+margin: 40px 20px;
 text-align: center;
 color: #232262;
 
