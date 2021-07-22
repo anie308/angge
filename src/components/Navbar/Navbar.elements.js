@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import {Container} from '../../globalStyles'
-import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
 background:#fff ;
@@ -30,7 +29,7 @@ ${Container}
 
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled.a`
 cursor: pointer;
 justify-self: flex-start;
 text-decoration: none;
@@ -139,7 +138,7 @@ border-bottom: 2px solid transparent;
 
 
 
-export const NavLink = styled(Link)`
+export const NavLin = styled.a`
     color: #232262;
     font-size: .9rem;
     display: flex;
@@ -189,7 +188,7 @@ export const NavItemBtn = styled.li`
 
 `
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled.a`
 display: flex;
 justify-content:center;
 align-items: center;

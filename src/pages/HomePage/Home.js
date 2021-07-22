@@ -14,8 +14,8 @@ import secImg from '../../assets/images/About Section.png'
 
 function InfoSection() {
     return (
-        <>
-            <InfoSec>
+        < >
+            <InfoSec id='home'>
                 <Container>
                     <InfoRow>
                         <TextWrapper>

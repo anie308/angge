@@ -18,7 +18,7 @@ import ellipse from '../../../assets/images/Ellipse 4.png'
 function Mission() {
     return (
         <>
-            <MissionCon>
+            <MissionCon   id='about'>
                 <MissionImgCon>
                     <CoverImg src={ellipse}/>
                     <MissionImg src={mission} />

@@ -83,6 +83,21 @@ font-size: 38px;
 color:#ffffff;
 margin-top: 20px;
 
+
+@media screen and (max-width:700px){
+    height:200px;
+    width:200px;
+    font-size: 48px;
+    
+}
+
+@media screen and (max-width:600px){
+    height: 130px;
+width: 130px;
+    font-size: 38px;
+    
+}
+
 `
 export const DivChild2 = styled.div`
 display:flex;
@@ -96,6 +111,20 @@ box-shadow: 5px  3px  3px  #F0F0F0;
 font-size: 38px;
 color:#ffffff;
 margin-top: 20px;
+
+@media screen and (max-width:700px){
+    height:200px;
+    width:200px;
+    font-size: 48px;
+    
+}
+
+@media screen and (max-width:600px){
+    height: 130px;
+width: 130px;
+    font-size: 38px;
+    
+}
 
 `
 export const DivChild3 = styled.div`
@@ -111,11 +140,37 @@ font-size: 38px;
 color:#ffffff;
 margin-top: 20px;
 
+
+
+
+@media screen and (max-width:700px){
+    height:200px;
+    width:200px;
+    font-size: 48px;
+    
+}
+@media screen and (max-width:600px){
+    height: 130px;
+width: 130px;
+    font-size: 38px;
+    
+}
 `
 
 export const Text = styled.p`
 margin-top: 10px;
 font-size: 14px;
 color: #4B647E;
+
+@media screen and (max-width:700px){
+   
+    font-size: 17px;
+    
+}
+
+@media screen and (max-width:600px){
+    font-size: 14px;
+
+}
 
 `

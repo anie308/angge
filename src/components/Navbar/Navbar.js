@@ -8,7 +8,7 @@ import {
     MobileIcon,
     NavMenu,
     NavItem,
-    NavLink,
+    NavLin,
     Image,
     NavBtnContainer,
     NavListContainer,
@@ -45,7 +45,7 @@ function Navbar() {
         <>
             <Nav>
                 <NavBarContainer>
-                    <NavLogo to='/'>
+                    <NavLogo >
                         <Image src={logo} alt="" />
                     </NavLogo>
                     <MobileIcon
@@ -59,23 +59,23 @@ function Navbar() {
 
                         
                        <NavItem>
-                            <NavLink to='/'>HOME</NavLink>
+                            <NavLin href='#home'>HOME</NavLin>
                         </NavItem>
 
                         <NavItem>
-                            <NavLink to='/about'>ABOUT</NavLink>
+                            <NavLin href='#about' >ABOUT</NavLin>
                         </NavItem>
 
                         <NavItem>
-                            <NavLink to='/service'>SERVICE</NavLink>
+                            <NavLin >SERVICE</NavLin>
                         </NavItem>
 
                         <NavItem>
-                            <NavLink to='/clients'>CLIENTS</NavLink>
+                            <NavLin >CLIENTS</NavLin>
                         </NavItem>
 
                         <NavItem>
-                            <NavLink to='/contact'>CONTACT</NavLink>
+                            <NavLin >CONTACT</NavLin>
                         </NavItem>
 
                     
@@ -86,11 +86,11 @@ function Navbar() {
                         
                         <NavItemBtn>
                             {button ? (
-                                <NavBtnLink to='/lets-talk'>
+                                <NavBtnLink >
                                     <Button primary >LETS-TALK</Button>
                                 </NavBtnLink>
                             ) : (
-                                <NavBtnLink to='/lets-talk'>
+                                <NavBtnLink >
                                     <Button  fontBig primary>LETS-TALK</Button>
                                 </NavBtnLink>
                             )}

@@ -61,8 +61,9 @@ padding-top: 0px;
 `;
 
 export const LeadText = styled.h1`
-font-size: 3rem;
+font-size: 3.5rem;
 color: #232262;
+font-weight: 700;
 
 
 
