@@ -1,167 +1,157 @@
 import styled from "styled-components";
 
+export const Cont =styled.div`
+padding: 80px 100px;
+display: grid;
+grid-template-columns:  1fr  1fr  ;
 
-export const Cont = styled.div`
-padding: 30px;
-display: flex;
-align-items: center;
-justify-content: space-around;
 
+
+@media screen and (max-width:1300px){
+
+padding: 30px 20px;
+}
 @media screen and (max-width:900px){
+    display: flex;
 flex-direction: column;
- padding: 0;
+padding: 0;
+margin: 0;
+padding: 30px 20px;
+}
+
+@media screen and (max-width:1300px){
+
+padding: 0;
+}
+@media screen and (max-width:900px ){
+    padding: 30px;
 }
 
 `
+export const Write =styled.div`
 
-export const Write = styled.div`
-margin-left: 20px;
+padding: 60px 0;
 
-
-@media screen and (max-width:900px){
-    width: auto;
-    padding:  20px;
+@media screen and (max-width:900px ){
+    padding: 30px 0;
 }
 
 `
-export const Textlg = styled.h1`
+export const Textlg =styled.p`
 color: #F35564;
-font-size: 65px;
-line-height: 60px;
+font-size: 55px;
+text-align: left;
+line-height: 3rem;
+font-weight: 900;
+margin-bottom: 15px;
+
+
+@media screen and (max-width:900px){
+text-align: center;
 margin-bottom: 20px;
-
-@media screen and (max-width:1200px){
-    
-    font-size: 35px;
-    line-height: 40px;
 }
-@media screen and (max-width:900px){
-    text-align: center;
-    font-size: 40px;
-    line-height: 40px;
-}
-
 `
-export const Br = styled.br`
-
-
-@media screen and (max-width:900px){
-    display: none;
-}
-
-
-`
-export const Textsm = styled.p`
+export const Textm =styled.p`
 color: #798293;
-/* width: 70%; */
-
-@media screen and (max-width:1200px){
-    font-size: 15px;
-}
 
 @media screen and (max-width:900px){
+text-align: center;
+padding: 0 50px;
+}
+@media screen and (max-width:700px){
     text-align: center;
-   width: auto;
+padding: 0 7px;
 }
 
 
 `
-
-export const FormCon = styled.div`
+export const FormCon =styled.div`
 
 
 @media screen and (max-width:900px){
-    text-align: center;
-}      
-`
-export const Form = styled.form`
-padding: 20px 0;
-
-
-@media screen and (max-width:1200px){
-   margin-left: 40px;
-}
-@media screen and (max-width:900px){
- margin: 0;
-}
-`
-export const InputCon = styled.div`
-
-
-
-@media screen and (max-width:1200px){
-
+margin: 0;
+padding: 0;
 }
 
+
+
 `
-export const Input = styled.input`
-width: 70%;
-border-radius: 30px;
-outline: none;
+export const InputCon =styled.div`
+
+`
+export const Input =styled.input`
+padding: 10px;
 border: none;
+outline: none;
 border: 2px solid #E7E7E7;
+border-radius: 15px;
 margin: 10px 0;
-padding: 10px 15px ;
-
-@media screen and (max-width:1200px){
-    width: 70%;
-}
-
+width: 100%;
 
 @media screen and (max-width:900px){
-    width: 90%;
+
 }
 
-`
 
-export const Textarea = styled.textarea`
-width: 70%;
-height: 150%;
-border-radius: 20px;
-outline: none;
+
+`
+export const Textarea =styled.textarea`
+padding: 10px;
 border: none;
+outline: none;
 border: 2px solid #E7E7E7;
+border-radius: 15px;
 margin: 10px 0;
-padding: 10px 15px ;
-
-
-@media screen and (max-width:1200px){
-    width: 70%;
-}
-@media screen and (max-width:900px){
-    width: 90%;
-}
-
-`
-
-export const FormButCon = styled.div`
-padding-right: 80px;
-
+width: 100%;
 
 @media screen and (max-width:900px){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+
 }
 `
+export const Form =styled.form`
+display: flex;
+flex-direction:column;
 
-export const FormBut = styled.button`
-outline: none;
-border: none;
+
+
+`
+export const FormButCon =styled.div`
+
+
+
+
+
+@media screen and (max-width:900px){
+
+}
+`
+export const FormBut =styled.button`
 color: white;
+border: none;
+outline: none;
+border-radius: 20px;
+padding: 10px 30px;
 background-color: #232262;
-padding: 10px 40px;
-border-radius: 40px;
-float: right;
+margin-left: 450px;
 
+@media screen and (max-width:1200px){
+margin-left:643px;
+}
 @media screen and (max-width:900px){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float :none;
+margin-left:317px;
+}
+@media screen and (max-width:700px){
+margin-left:0;
 }
 
-
-
+`
+export const Bra =styled.br`
+@media screen and (max-width:900px){
+display: none;
+}
+`
+export const Br =styled.br`
+@media screen and (max-width:1200px){
+display: none;
+}
 `

@@ -1,4 +1,5 @@
 import React from 'react'
+import CountUp from 'react-countup'
 import {    ElementCon,
                     TextCon,
                     TextLg,
@@ -21,15 +22,15 @@ function Small() {
 
             <DivCon>
                 <DivItem>
-                    <DivChild1>137</DivChild1>
+                    <DivChild1><CountUp  end={137} duration={7}/></DivChild1>
                     <Text>PROJECT DONE</Text>
                 </DivItem>
                 <DivItem>
-                <DivChild2>47</DivChild2>
+                <DivChild2><CountUp end={47} duration={7}/></DivChild2>
                 <Text>HAPPY CLIENT</Text>
                 </DivItem>
                 <DivItem>
-                <DivChild3>34</DivChild3>
+                <DivChild3><CountUp end={34} duration={10}/></DivChild3>
                 <Text>RETURN CLIENT</Text>
                 </DivItem>
 

@@ -7,7 +7,9 @@ import Small from './pages/Small/Small';
 import Services from './pages/Services/Services'
 import Portfolio from './pages/Portfolio/Portfolio';
 import Reviews from './pages/Reviews/Reviews';
+import Team from './pages/Team/Team';
 import Contact from './pages/Contact/Contact';
+import Footer from './pages/Footer/Footer';
 
 
 
@@ -27,6 +29,8 @@ function App() {
       <Portfolio/>
       <Reviews/>
       <Contact/>
+      <Team/>
+      <Footer/>
    </>
 
       

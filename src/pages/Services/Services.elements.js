@@ -100,6 +100,14 @@ border-radius: 20px;
 padding: 20px;
 margin-bottom: 20px;
 
+@media screen and (max-width:900px){
+    display: flex;
+    flex-direction: column;
+align-items: center;
+text-align: center;
+ 
+}
+
 
 `
 export const Item2 = styled.div`
@@ -111,6 +119,13 @@ padding: 20px;
 margin-bottom: 20px;
 
 
+@media screen and (max-width:900px){
+    display: flex;
+    flex-direction: column;
+align-items: center;
+text-align: center;
+ 
+}
 
 `
 export const Item3 = styled.div`
@@ -122,6 +137,13 @@ padding: 20px;
 margin-bottom: 20px;
 
 
+@media screen and (max-width:900px){
+    display: flex;
+    flex-direction: column;
+align-items: center;
+text-align: center;
+ 
+}
 
 `
 export const Item4 = styled.div`
@@ -133,6 +155,13 @@ padding: 20px;
 margin-bottom: 20px;
 
 
+@media screen and (max-width:900px){
+    display: flex;
+    flex-direction: column;
+align-items: center;
+text-align: center;
+ 
+}
 
 `
 export const Item5 = styled.div`
@@ -143,6 +172,14 @@ border-radius: 20px;
 padding: 20px;
 margin-bottom: 20px;
 
+
+@media screen and (max-width:900px){
+    display: flex;
+    flex-direction: column;
+align-items: center;
+text-align: center;
+ 
+}
 
 `
 

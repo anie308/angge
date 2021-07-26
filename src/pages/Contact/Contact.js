@@ -4,12 +4,13 @@ import {
     Write,
     FormCon,
     Textlg,
-    Textsm,
+    Textm,
     Form,
     Input,
     InputCon,
     Textarea,
     Br,
+    Bra,
     FormButCon,
     FormBut,
 } from './Contact.element'
@@ -17,25 +18,28 @@ import {
 
 function Contact() {
     return (
-        <Cont>
+        <Cont id='contact'>
             <Write>
-                <Textlg>STAY <Br/>
+                <Textlg>STAY <Bra/>
                       IN TOUCH</Textlg>
-                <Textsm>The perfectionism makes some sense, but seems at odds <Br/>with the current infatuation with Jobs. Jobs couldn't find<Br/> the right beige from a set of 200 and had to design a new <Br/> beige. He seemed like the ultimate perfectionist  <Br/>– sometimes.</Textsm>
+                <Textm>The perfectionism makes some sense, but seems at odds <Br/>with the current infatuation with Jobs. Jobs couldn't find the<Br/> right beige from a set of 200 and had to design a new  beige. He<Br/> seemed like the ultimate perfectionist – sometimes.</Textm>
+
+           
             </Write>
             <FormCon>
+           
                 <Form autoComplete={null}>
                     
                    <InputCon>
                    <Input placeholder='Your name' />
                    <Input  placeholder='Your email'/>
-                   <Input  placeholder='Your phone number'/>
+                   <Input  placeholder=' Phone number'/>
                    <Textarea  placeholder='Message' rows='4'/>
                    </InputCon>
                  
 
                  <FormButCon>
-                 <FormBut>LET'S TALK</FormBut>
+                 <FormBut type='submit'>LET'S TALK</FormBut>
                  </FormButCon>
               
               

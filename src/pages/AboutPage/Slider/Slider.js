@@ -8,19 +8,21 @@ import { Item,
      import trax from '../../../assets/images/TRAX LOGO black.png'
 
 const breakPoints = [
-    {width: 1, itemsToShow: 1},
+    {width: 1, itemsToShow: 1, },
     {width: 550, itemsToShow: 4},   
     {width: 768, itemsToShow: 4},
     {width: 1200, itemsToShow: 4}
 ]
 
+
 function Slider() {
     return (
         <SliderCon>
-            <Carousel
+            <Carousel 
              breakPoints={breakPoints}
            enableAutoPlay={true}
            pagination={false}
+           
            >
                 <Item><img src={roothub} alt="" /></Item>
                 <Item><img src={ngage} alt="" /></Item>

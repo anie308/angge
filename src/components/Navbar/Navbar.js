@@ -67,7 +67,7 @@ function Navbar() {
                         </NavItem>
 
                         <NavItem>
-                            <NavLin >SERVICE</NavLin>
+                            <NavLin href='#services' >SERVICE</NavLin>
                         </NavItem>
 
                         <NavItem>
@@ -75,7 +75,7 @@ function Navbar() {
                         </NavItem>
 
                         <NavItem>
-                            <NavLin >CONTACT</NavLin>
+                            <NavLin href='#contact' >CONTACT</NavLin>
                         </NavItem>
 
                     

@@ -26,7 +26,7 @@ import { TextCon,
 function Services() {
     return (
         <>
-          <Parent>
+          <Parent  id='services'>
           <TextCon>
                 <TextLg>Our Services</TextLg>
                 <TextSm>Executive Trade International is an University Application Centre, guiding Bangladeshi students to Australian, British, Canadian and Irish universities!</TextSm>

@@ -25,8 +25,10 @@ font-size: 12px;
 `
 export const TextLg = styled.h1`
 
+
 @media screen and (max-width:700px){
     font-size: 30px;
+    padding: 0 8px;
 }
 `
 export const TexLg = styled.h1`
