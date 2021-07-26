@@ -32,6 +32,10 @@ align-items: center;
 justify-content:space-around ;
 padding: 40px 150px;
 
+@media screen and (max-width:1200px){
+    /* flex-direction: column; */
+    padding: 40px 70px;
+}
 @media screen and (max-width:900px){
     /* flex-direction: column; */
     padding: 40px 0;
