@@ -23,7 +23,7 @@ const settings = {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 1000,
-    arrow:false,
+    arrows:false,
     responsive: [
         {
           breakpoint: 5000,
@@ -51,7 +51,7 @@ const settings = {
             slidesToShow: 1,
             slidesToScroll: 1,
             centerMode: true,
-            arrow:false,
+            arrows:false,
           }
         },
         

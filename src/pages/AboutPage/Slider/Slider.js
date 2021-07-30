@@ -20,7 +20,7 @@ const settings = {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 1000,
-    arrow:false,
+    arrows:false,
     responsive: [
         {
           breakpoint: 2000,

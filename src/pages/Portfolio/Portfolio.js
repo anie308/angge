@@ -53,7 +53,7 @@ const settings = {
             slidesToScroll: 1,
             initialSlide: 2,
             centerMode: true,
-            arrow:false,
+            arrows:false,
           }
         },
         {
@@ -62,7 +62,7 @@ const settings = {
             slidesToShow: 1,
             slidesToScroll: 1,
             centerMode: true,
-            arrow:false,
+            arrows:false,
           }
         },
         
