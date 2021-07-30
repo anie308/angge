@@ -1,5 +1,8 @@
 import React from 'react'
-import Carousel from 'react-elastic-carousel'
+import Slider from "react-slick";
+ import "slick-carousel/slick/slick.css"; 
+ import "slick-carousel/slick/slick-theme.css";
+
 import web1 from '../../assets/images/Group 94.png';
 import web2 from '../../assets/images/Group 482.png';
 import web3 from '../../assets/images/Group 483.png';
@@ -23,12 +26,48 @@ import {
 } from './Portfolio.element'
 
 
-const breakPoints = [
-    {width: 1, itemsToShow: 1},
-    {width: 550, itemsToShow: 2},   
-    {width: 768, itemsToShow: 3},
-    {width: 1200, itemsToShow: 4}
-]
+
+
+const settings = {
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    swipeToSlide: true,
+    autoplaySpeed: 1000,
+    pauseOnHover: true,
+    responsive: [
+        {
+          breakpoint: 2000,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: true,
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            initialSlide: 2,
+            centerMode: true,
+            arrow:false,
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            arrow:false,
+          }
+        },
+        
+      ]
+  };
 
 function Portfolio() {
     return (
@@ -38,12 +77,8 @@ function Portfolio() {
                 <TextLg>We Have A Great Portfolio To Check</TextLg>
             </TextCon>
             <SliderCon>
-                <Carousel breakPoints={breakPoints}
-                pagination={false}
-                enableAutoPlay={true}
-                
-                >
-                <Item>
+                <Slider {...settings}  >
+                <Item >
                   <ImgCon1>
                   <Imag src={web1}/>
                   </ImgCon1>
@@ -52,7 +87,7 @@ function Portfolio() {
                       <TexSm>UX/UI Design</TexSm>
                   </Texcon>
                 </Item>
-                <Item>
+                <Item >
                   <ImgCon2>
                   <Imag src={web2}/>
                   </ImgCon2>
@@ -61,7 +96,7 @@ function Portfolio() {
                       <TexSm>UX/UI Design</TexSm>
                   </Texcon>
                 </Item>
-                <Item>
+                <Item >
                   <ImgCon3>
                   <Imag src={web3}/>
                   </ImgCon3>
@@ -70,7 +105,7 @@ function Portfolio() {
                       <TexSm>UX/UI Design</TexSm>
                   </Texcon>
                 </Item>
-                <Item>
+                <Item >
                   <ImgCon4>
                   <Imag src={web4}/>
                   </ImgCon4>
@@ -79,7 +114,7 @@ function Portfolio() {
                       <TexSm>UX/UI Design</TexSm>
                   </Texcon>
                 </Item>
-                </Carousel>
+                </Slider>
             </SliderCon>
         </Parent>
     )

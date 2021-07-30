@@ -18,7 +18,7 @@ export const SliderCon = styled.div`
 padding: 0 250px;
 
 @media screen and (max-width:900px){
-    padding: 0 100px;
+    padding: 0 ;
 }
 @media screen and (max-width:768px){
     padding:  0 30px;

@@ -70,4 +70,27 @@ text-align: center;
 font-style: italic;
 
 `
+export const IconsBag = styled.div`
+margin-top: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 15px;
+`
+export const IconCon = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color:#232262  ;
+margin-right: 10px;
+padding: 6px ;
+color: white;
+border-radius: 50%;
+font-size: 13px;
 
+@media screen and (max-width:900px){
+   padding: 7px;
+
+}
+`

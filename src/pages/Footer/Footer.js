@@ -1,4 +1,10 @@
 import React from 'react'
+import { FiFacebook } from 'react-icons/fi';
+import {FiTwitter } from 'react-icons/fi';
+import {FiInstagram } from 'react-icons/fi';
+import {FiYoutube } from 'react-icons/fi';
+import {AiOutlineCopyright } from 'react-icons/ai';
+
 import {
     Cont,
     Part1,
@@ -22,7 +28,11 @@ import {
     Div3,
     Div4,
     Part3,
-    Lnk
+    Lnk,
+     Copy,
+     IconsBag,
+     IconCon,
+     Tet
 } from './Footer.element'
 import logo from '../../assets/images/Asset 1.png'
 
@@ -43,7 +53,7 @@ function Footer() {
             <Part2>
                 <Div1>
                     <ImgCon>
-                        <Imag src={logo} />
+                       <Lnk href='#'> <Imag src={logo} /></Lnk>
                     </ImgCon>
                     <Smal>
                         Proin ac quam et lectus vestibulum blandit.<Bra/> Nunc <Br/>maximus nibh at placerat <Bra/>tincidunt. Nam sem  <Br/> lacus, ornare<Bra/> non ante sed, ultricies fringilla <Br/>massa.
@@ -77,7 +87,17 @@ function Footer() {
 
             </Part2>
             <Part3>
-                
+              <IconsBag>
+              <IconCon> < FiFacebook/> </IconCon>
+              <IconCon>< FiTwitter/></IconCon>
+              <IconCon>  <FiInstagram/></IconCon>
+                <IconCon> <FiYoutube/></IconCon>  
+                </IconsBag>
+               
+                <Copy>
+                <AiOutlineCopyright/>
+                <Tet> 2021 - All Rights Reserved</Tet>
+                </Copy>
             </Part3>
         </Cont>
     )

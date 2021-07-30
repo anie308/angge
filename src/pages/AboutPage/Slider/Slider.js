@@ -1,39 +1,61 @@
 import React from 'react'
-import Carousel from 'react-elastic-carousel'
+// import Carousel from 'react-elastic-carousel'
+import Slider from "react-slick";
+
+ import "slick-carousel/slick/slick.css"; 
+ import "slick-carousel/slick/slick-theme.css";
+
 import { Item,
      SliderCon} from  './Slider.elements'
-     import roothub from '../../../assets/images/roothub full black.png'
-     import hostbeak from '../../../assets/images/hostbeak-logo.png'
-     import ngage from '../../../assets/images/reduced-ngage-logo-small.png'
-     import trax from '../../../assets/images/TRAX LOGO black.png'
 
-const breakPoints = [
-    {width: 1, itemsToShow: 1, },
-    {width: 550, itemsToShow: 4},   
-    {width: 768, itemsToShow: 4},
-    {width: 1200, itemsToShow: 4}
-]
+import roothub from '../../../assets/images/roothub full black.png'
+import hostbeak from '../../../assets/images/hostbeak-logo.png'
+import ngage from '../../../assets/images/reduced-ngage-logo-small.png'
+import trax from '../../../assets/images/TRAX LOGO black.png'
 
 
-function Slider() {
+
+const settings = {
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 1000,
+    arrow:false,
+    responsive: [
+        {
+          breakpoint: 2000,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+            centerMode: true,
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            dots:true,
+          }
+        },
+        
+      ]
+  };
+
+function Slide() {
     return (
         <SliderCon>
-            <Carousel 
-             breakPoints={breakPoints}
-           enableAutoPlay={true}
-           pagination={false}
-           
-           >
+            <Slider {...settings} >
                 <Item><img src={roothub} alt="" /></Item>
                 <Item><img src={ngage} alt="" /></Item>
                 <Item><img src={hostbeak} alt="" /></Item>
                 <Item><img src={trax} alt="" /></Item>
-                <Item><img src={roothub} alt="" /></Item>
-                <Item><img src={ngage} alt="" /></Item>
-                <Item><img src={trax} alt="" /></Item>
-            </Carousel>
+            </Slider>
         </SliderCon>
     )
 }
 
-export default Slider
+export default Slide

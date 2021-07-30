@@ -41,17 +41,26 @@ font-size: 16px;
 `
 
 export const SliderCon= styled.div`
-padding: 20px;
+padding: 20px 100px;
+
+@media screen and (max-width:700px){
+    padding: 20px ;
+}
 
 `
 export const Item= styled.div`
 background-color: #fff;
 height: 200px;
-width: 230px;
+width: 200px;
+max-width: 230px;
 border-radius: 20px;
+
+
 
 @media screen and (max-width:700px){
     width: 190;
+    max-width: 200px;
+
 }
 
 

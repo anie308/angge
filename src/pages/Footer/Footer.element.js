@@ -76,6 +76,7 @@ padding:  15px 35px;
 border: none;
 outline: none;
 color:#232262;
+cursor: pointer;
 
 `
 export const   Part2 = styled.div`
@@ -162,9 +163,55 @@ export const Part3 = styled.div`
 margin: 0 40px;
 border-top: 1px solid #DCC7FF ;
 padding: 20px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+@media screen and (max-width:900px){
+    margin: 0  20px;
+   
+}
+@media screen and (max-width:700px){
+    margin: 0  20px;
+    flex-direction: column;
+   
+}
 `
 
 export const Lnk = styled.a`
 text-decoration: none;
 color:#232262 ;
+`
+export const Copy = styled.div`
+display: flex;
+align-items: center;
+
+@media screen and (max-width:900px){
+
+}
+`
+export const IconsBag = styled.div`
+display: flex;
+`
+export const IconCon = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:#232262  ;
+margin-right: 20px;
+padding: 10px ;
+color: white;
+border-radius: 50%;
+
+@media screen and (max-width:900px){
+   padding: 7px;
+
+}
+`
+
+export const Tet = styled.p`
+margin-left: 10px;
+color: #707070;
+font-size: 14px;
+font-weight: 100;
 `

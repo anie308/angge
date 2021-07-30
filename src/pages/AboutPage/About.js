@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from './Slider/Slider'
+import Slide from './Slider/Slider'
 import Mission from './Mission/Mission'
 import { AboutCon,
                     Trusted,
@@ -18,7 +18,7 @@ function About() {
                 </TrustedChild>
             </Trusted>
             <AboutCon>
-                <Slider />
+                <Slide />
             </AboutCon>
             <Mission/>
         </>

@@ -1,5 +1,7 @@
 import React from 'react'
-import Carousel from 'react-elastic-carousel'
+import Slider from "react-slick";
+ import "slick-carousel/slick/slick.css"; 
+ import "slick-carousel/slick/slick-theme.css";
 import {
     Con,
     TextCon,
@@ -15,13 +17,46 @@ import {
 import customer from '../../assets/images/Ellipse 7.png'
 
 
-const breakPoints = [
-    {width: 1, itemsToShow: 1},
-    {width: 550, itemsToShow: 1},   
-    {width: 768, itemsToShow: 1},
-    {width: 1200, itemsToShow: 1}
-]
 
+const settings = {
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 1000,
+    arrow:false,
+    responsive: [
+        {
+          breakpoint: 5000,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: true,
+            arrow:false,
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            arrow:false,
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            arrow:false,
+          }
+        },
+        
+      ]
+  };
 
 function Reviews() {
     return (
@@ -30,9 +65,7 @@ function Reviews() {
                 <TextLg>Customer Reviews</TextLg>
             </TextCon>
             <CaroCon>
-                <Carousel breakPoints={breakPoints}
-                enableAutoPlay={true}
-                pagination={false}>
+                <Slider {...settings}>
                     <Item>
                     <ImgCon>
                   <Imag src={customer}/>
@@ -60,7 +93,7 @@ function Reviews() {
                         <RevName>ADE YOMI</RevName>
                     </Review>
                     </Item>
-                </Carousel>
+                </Slider>
             </CaroCon>
         </Con>
     )

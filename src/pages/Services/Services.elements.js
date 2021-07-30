@@ -186,6 +186,9 @@ text-align: center;
 export const IconWrap1 = styled.div`
 height: 60px;
 width: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
 border-radius: 50%;
 background-color: #232262;
 
@@ -195,6 +198,9 @@ background-color: #232262;
 export const IconWrap2 = styled.div`
 height: 60px;
 width: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
 border-radius: 50%;
 background-color: #F15A24;
 
@@ -204,6 +210,9 @@ background-color: #F15A24;
 export const IconWrap3 = styled.div`
 height: 60px;
 width: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
 border-radius: 50%;
 background-color: #70CE88;
 
@@ -213,6 +222,9 @@ background-color: #70CE88;
 export const IconWrap4 = styled.div`
 height: 60px;
 width: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
 border-radius: 50%;
 background-color: #232262;
 
@@ -222,6 +234,9 @@ background-color: #232262;
 export const IconWrap5 = styled.div`
 height: 60px;
 width: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
 border-radius: 50%;
 background-color: #F15A24;
 

@@ -1,4 +1,8 @@
 import React from 'react'
+import { FiFacebook } from 'react-icons/fi';
+import {FiTwitter } from 'react-icons/fi';
+import {FiInstagram } from 'react-icons/fi';
+import {FiYoutube } from 'react-icons/fi';
 import {
     Contain,
     Write,
@@ -9,7 +13,9 @@ import {
     ImgCon,
     Imag,
     Name,
-    Qual
+    Qual,
+    IconsBag,
+    IconCon
 } from './Team.element'
 import customer from '../../assets/images/Ellipse 7.png'
 
@@ -31,6 +37,12 @@ function Team() {
                     <Name>Abas Eton</Name>
                     <Qual>CEO & Design Director
                     </Qual>
+                    <IconsBag>
+              <IconCon> < FiFacebook/> </IconCon>
+              <IconCon>< FiTwitter/></IconCon>
+              <IconCon>  <FiInstagram/></IconCon>
+                <IconCon> <FiYoutube/></IconCon>  
+                </IconsBag>
                 </ContChild>
                 <ContChild>
                     <ImgCon>
@@ -39,6 +51,12 @@ function Team() {
                     <Name>Abas Eton</Name>
                     <Qual>CEO & Design Director
                     </Qual>
+                    <IconsBag>
+              <IconCon> < FiFacebook/> </IconCon>
+              <IconCon>< FiTwitter/></IconCon>
+              <IconCon>  <FiInstagram/></IconCon>
+                <IconCon> <FiYoutube/></IconCon>  
+                </IconsBag>
                 </ContChild>
                 <ContChild>
                     <ImgCon>
@@ -47,6 +65,12 @@ function Team() {
                     <Name>Abas Eton</Name>
                     <Qual>CEO & Design Director
                     </Qual>
+                    <IconsBag>
+              <IconCon> < FiFacebook/> </IconCon>
+              <IconCon>< FiTwitter/></IconCon>
+              <IconCon>  <FiInstagram/></IconCon>
+                <IconCon> <FiYoutube/></IconCon>  
+                </IconsBag>
                 </ContChild>
                 <ContChild>
                     <ImgCon>
@@ -55,6 +79,12 @@ function Team() {
                     <Name>Abas Eton</Name>
                     <Qual>CEO & Design Director
                     </Qual>
+                    <IconsBag>
+              <IconCon> < FiFacebook/> </IconCon>
+              <IconCon>< FiTwitter/></IconCon>
+              <IconCon>  <FiInstagram/></IconCon>
+                <IconCon> <FiYoutube/></IconCon>  
+                </IconsBag>
                 </ContChild>
             </Cont>
 

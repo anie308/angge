@@ -132,7 +132,8 @@ outline: none;
 border-radius: 20px;
 padding: 10px 30px;
 background-color: #232262;
-margin-left: 450px;
+margin-left: 440px;
+cursor: pointer;
 
 @media screen and (max-width:1200px){
 margin-left:643px;
